@@ -1,0 +1,115 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  width: 500px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+.section-top,
+.section-bottom {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.section-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  flex-basis: 25%;
+  background-color: #14213d;
+}
+
+.section-bottom {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 75%;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 4rem;
+  line-height: normal;
+}
+
+.key-row {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 25%;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+.number,
+.symbol,
+.clear {
+  flex-basis: 25%;
+  height: 100%;
+}
+
+.number,
+.symbol,
+.result,
+.backspace,
+.clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #14213d;
+}
+
+.number {
+  background-color: white;
+}
+
+.symbol,
+.backspace,
+.clear {
+  background-color: #e5e5e5;
+}
+
+.result {
+  flex-basis: 75%;
+  background-color: #fca311;
+}
+
+.backspace {
+  flex-basis: 50%;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: large;
+  cursor: pointer;
+  outline: inherit;
+  width: 100%;
+  height: 100%;
+}
